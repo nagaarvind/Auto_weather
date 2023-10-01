@@ -1,18 +1,22 @@
 import smtplib
 import getpass
 
-userMail = input('user_mail:')
-password = getpass.getpass("enter pass: ")
-senderMail = input('sender_mail:')
-print("password entered:", '*****')
-server = smtplib.SMTP('smtp.gmail.com',587)
-server.starttls()
+def auto_mate():
+    userMail = "officialteche@gmail.com"
+    password = "yqgd crfb qqdi brto"
+    print("password entered:", '*****')
+    # senderMail = input('sender_mail:')
+    senderMail = "nagaarvind7@gmail.com"
+    server = smtplib.SMTP('smtp.gmail.com',587)
+    #to start a safe tls., connecting server to send mail to the client
+    server.starttls()
+    server.login(userMail,password)
+    server.sendmail(userMail,senderMail,'take umbrella')
+    server.sendmail
+    print('mail sent')
+    server.quit()
 
-server.login(userMail,password)
 
-server.sendmail(userMail,senderMail,'mail sent from python code from input from the user')
-
-print('mail sent')
-
-server.quit()
 # yqgd crfb qqdi brto
+
+    
