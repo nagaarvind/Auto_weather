@@ -4,7 +4,7 @@ import subprocess
 import emoji
 from auto_mail import auto_mate
 
-city_name = "chennai"
+city_name = "madurai"
 current_Weather_Api = f'http://api.openweathermap.org/geo/1.0/direct?q={city_name}&limit=2&appid=c6e708d0cbd57de925e26e107f23d44b'
 res = requests.get(current_Weather_Api)
 content = (res.json())
